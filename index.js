@@ -12,8 +12,8 @@ showStorage = ()=>{
     console.log(items)
     if(items){
         items.forEach((element)=> {
-            todoList("",element)
-            console.log(element)
+            todoList("",element)  // here iam using 2 parameter 1st parameter will send empty string, and 2nd parameter will send element value
+          
         })
     }
 }
@@ -32,7 +32,8 @@ updateStorage = () =>{
 
 
 
-function todoList(a,text = ""){ 
+function todoList(a,text = ""){      // as i said in the above comment when it comes here 1st parameter will have object pointer value and 2nd parameter will have 
+                                     //element value that's why i used 2 paramters here (1 to hold the object pointer and 2 to hold element value)
        let message = ""
 
        if(text) message = text;
